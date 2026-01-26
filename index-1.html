@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Inonetecx</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .feature-tooltip {
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .feature-tooltip:hover {
+            color: var(--bs-primary) !important;
+        }
+
+        .inon-tooltip .tooltip-inner {
+            max-width: 400px;
+            text-align: left;
+            padding: 1rem 1.25rem;
+            font-size: 1rem;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #444;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            border: 1px solid #dee2e6;
+        }
+
+        .inon-tooltip .tooltip-inner strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            color: var(--bs-primary);
+        }
+
+        .inon-tooltip.bs-tooltip-top .tooltip-arrow::before,
+        .inon-tooltip.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+            border-top-color: #ffffff;
+        }
+
+        .inon-tooltip.bs-tooltip-bottom .tooltip-arrow::before,
+        .inon-tooltip.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+            border-bottom-color: #ffffff;
+        }
+
+        .inon-tooltip.bs-tooltip-left .tooltip-arrow::before,
+        .inon-tooltip.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+            border-left-color: #ffffff;
+        }
+
+        .inon-tooltip.bs-tooltip-right .tooltip-arrow::before,
+        .inon-tooltip.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+            border-right-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/hero1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Innovation & Expertise</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Shaping Future Technology</h1>
+                            <a href="contact.html"
+                                class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Innovation & Expertise</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Shaping Future Technology</h1>
+                            <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a> -->
+                            <a href="contact.html"
+                                class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4"
+                        style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Happy Clients</h5>
+                            <h1 class="text-white mb-0 counter-custom" data-target="139">0</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4"
+                        style="height: 150px;">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-primary mb-0">Projects Done</h5>
+                            <h1 class="mb-0 counter-custom" data-target="547">0</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4"
+                        style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-award text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Win Awards</h5>
+                            <h1 class="text-white mb-0 counter-custom" data-target="157">0</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts Start -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title-1 position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+                        <h1 class="mb-0">Redefining Service Integration Since 2019</h1>
+                    </div>
+                    <p class="mb-4">Since 2019, we have been at the forefront of digital transformation, helping
+                        businesses navigate the complex landscape of modern technology. Our team of experienced
+                        professionals specializes in SAP solutions, cloud migration, cybersecurity, AI & ML, DevOps, and
+                        comprehensive digital transformation services. We combine deep technical expertise with
+                        strategic business insights to deliver solutions that drive growth, efficiency, and innovation.
+                    </p>
+                    <div class="row g-0 mb-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-3">
+                                <i class="fa fa-check text-primary me-3"></i>
+                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-html="true"
+                                    title="<strong>Industry Recognition</strong><br>At Inonetecx, our commitment to innovation and excellence has earned us recognition from leading voices in the technology industry. Our award-winning solutions stand as proof of our ability to combine creativity, strategy, and technical precision to solve real-world business challenges. From AI-driven enterprise solutions to next-generation cloud integrations, our work has been acknowledged by industry experts, partners, and clients alike for driving measurable impact and delivering unmatched performance. These accolades reflect not just our technical capabilities, but also our dedication to pushing boundaries and setting new benchmarks in IT consulting and digital transformation.">
+                                    Industry Recognition
+                                </span>
+                            </h5>
+                            <h5 class="mb-3">
+                                <i class="fa fa-check text-primary me-3"></i>
+                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-html="true"
+                                    title="<strong>Expert Team</strong><br>100+ certified professionals with diverse technical backgrounds. At Inonetecx, our people are the engine behind every breakthrough. With a growing team of 100+ certified experts, we bring together a rare blend of deep technical skill, domain experience, and product-minded thinking—so clients get solutions that aren't just built right, but built to deliver measurable business value.">
+                                    Expert Team
+                                </span>
+                            </h5>
+                            <h5 class="mb-3">
+                                <i class="fa fa-check text-primary me-3"></i>
+                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-html="true"
+                                    title="<strong>Global Reach</strong><br>Serving clients across North America, Europe, and Asia-Pacific. At Inonetecx, we operate without borders — partnering with enterprises and innovators around the world to deliver technology solutions that transcend geography and industry. Our global footprint spans North America, Europe, and the Asia-Pacific region, enabling us to bring local insights, global expertise, and around-the-clock support to every engagement.">
+                                    Global Reach
+                                </span>
+                            </h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-3">
+                                <i class="fa fa-check text-primary me-3"></i>
+                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-html="true"
+                                    title="<strong>Award Winning</strong><br>Our solutions have been recognized by industry bodies and technology partners for excellence in delivery, innovation, and customer outcomes. These awards validate our focus on quality engineering, robust architectures, and user‑centric design — and they motivate us to continuously raise the bar on every project we deliver.">
+                                    Award Winning
+                                </span>
+                            </h5>
+                            <h5 class="mb-3">
+                                <i class="fa fa-check text-primary me-3"></i>
+                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-html="true"
+                                    title="<strong>Professional Staff</strong><br>Our teams combine strong technical foundations with clear communication, structured delivery, and a consultative mindset. Every engagement is managed with transparent processes, defined milestones, and proactive risk management so that stakeholders always know where the project stands and what comes next.">
+                                    Professional Staff
+                                </span>
+                            </h5>
+                            <h5 class="mb-3">
+                                <i class="fa fa-check text-primary me-3"></i>
+                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-html="true"
+                                    title="<strong>24/7 Support</strong><br>Business doesn't stop, and neither do we. Our support model is designed to give you access to the right people at the right time, across time zones. From proactive monitoring to rapid incident response and ongoing optimization, we help keep your critical systems stable, secure, and performing at their best around the clock.">
+                                    24/7 Support
+                                </span>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">+1 647-493-5614</h4>
+                        </div>
+                    </div>
+                    <a href="about-1.html" class="btn btn-primary py-3 px-5 mt-3 ms-3 wow zoomIn"
+                        data-wow-delay="0.9s">Learn More About Us</a>
+                </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+                            src="img/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Why Choose Us</h5>
+                <h1 class="mb-0">Why Work With Us?</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.2s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-chart-line text-white"></i>
+                            </div>
+                            <h4>Growth Opportunities</h4>
+                            <p class="mb-0">Continuous learning and career advancement programs</p>
+                        </div>
+                        <div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.6s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-users text-white"></i>
+                            </div>
+                            <h4>Great Team</h4>
+                            <p class="mb-0">Work with talented professionals worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s"
+                            src="img/feature.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.4s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-laptop text-white"></i>
+                            </div>
+                            <h4>Flexible Work</h4>
+                            <p class="mb-0">Remote and hybrid work options available</p>
+                        </div>
+                        <div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.8s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-dollar-sign text-white"></i>
+                            </div>
+                            <h4>Competitive Pay</h4>
+                            <p class="mb-0">Salary, bonuses, and comprehensive benefits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features Start -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
+                <h1 class="mb-0">Comprehensive IT consulting services tailored to your business needs</h1>
+                <a href="service-1.html" class="btn btn-primary mt-4">View All Services <i
+                        class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-database text-white"></i>
+                        </div>
+                        <h4 class="mb-3">SAP Solutions</h4>
+                        <p class="m-0">Full-spectrum SAP Solution Services from ERP implementations to cloud-first
+                            strategies like RISE with SAP.</p>
+                        <a class="btn btn-lg btn-primary rounded mt-3" href="#" data-bs-toggle="modal"
+                            data-bs-target="#sapSolutionsModal">
+                            Learn More <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-cloud text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Cloud Solutions</h4>
+                        <p class="m-0">Comprehensive cloud services for Azure, AWS, and GCP - from migration to
+                            management and optimization.</p>
+                        <a class="btn btn-lg btn-primary rounded mt-3" href="#" data-bs-toggle="modal"
+                            data-bs-target="#cloudSolutionsModal">
+                            Learn More <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-shield-alt text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Cybersecurity Solutions</h4>
+                        <p class="m-0">Comprehensive cybersecurity solutions to protect your digital assets against
+                            evolving threats and ensure compliance.</p>
+                        <a class="btn btn-lg btn-primary rounded mt-3" href="#" data-bs-toggle="modal"
+                            data-bs-target="#cybersecurityModal">
+                            Learn More <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-brain text-white"></i>
+                        </div>
+                        <h4 class="mb-3">AI & ML Solutions</h4>
+                        <p class="m-0">Transform raw data into actionable insights through AI, ML, and Data Science for
+                            intelligent automation and growth.</p>
+                        <a class="btn btn-lg btn-primary rounded mt-3" href="#" data-bs-toggle="modal"
+                            data-bs-target="#aiMlModal">
+                            Learn More <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-cogs text-white"></i>
+                        </div>
+                        <h4 class="mb-3">DevOps & Automation Solutions</h4>
+                        <p class="m-0">Modern DevOps practices and automation solutions for faster releases and scalable
+                            infrastructure management.</p>
+                        <a class="btn btn-lg btn-primary rounded mt-3" href="#" data-bs-toggle="modal"
+                            data-bs-target="#devopsModal">
+                            Learn More <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-sync-alt text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Digital Transformation Solutions</h4>
+                        <p class="m-0">End-to-end digital transformation solutions modernizing processes and reimagining
+                            customer experiences.</p>
+                        <a class="btn btn-lg btn-primary rounded mt-3" href="#" data-bs-toggle="modal"
+                            data-bs-target="#digitalTransformationModal">
+                            Learn More <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Work Process Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Work Process</h5>
+                <h1 class="mb-0">Step By Step Simple & Clean Working Process</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6 process-item wow slideInUp" data-wow-delay="0.2s">
+                    <div class="position-relative d-flex flex-column align-items-center text-center">
+                        <div
+                            class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-search fa-2x text-white"></i>
+                        </div>
+                        <h3>Analysis</h3>
+                        <p class="mb-0">We begin by thoroughly analyzing your business requirements, current
+                            infrastructure, and strategic goals to develop a comprehensive understanding of your needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 process-item wow slideInUp" data-wow-delay="0.4s">
+                    <div class="position-relative d-flex flex-column align-items-center text-center">
+                        <div
+                            class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-sitemap fa-2x text-white"></i>
+                        </div>
+                        <h3>Strategy & Planning</h3>
+                        <p class="mb-0">Our experts design a customized strategy and roadmap that aligns with your
+                            business objectives and ensures optimal technology implementation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 process-item wow slideInUp" data-wow-delay="0.6s">
+                    <div class="position-relative d-flex flex-column align-items-center text-center">
+                        <div
+                            class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-code fa-2x text-white"></i>
+                        </div>
+                        <h3>Implementation</h3>
+                        <p class="mb-0">We execute the solution with precision, following best practices and industry
+                            standards to ensure seamless integration and deployment.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 process-item wow slideInUp" data-wow-delay="0.8s">
+                    <div class="position-relative d-flex flex-column align-items-center text-center">
+                        <div
+                            class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-check fa-2x text-white"></i>
+                        </div>
+                        <h3>Support & Optimization</h3>
+                        <p class="mb-0">Ongoing support, maintenance, and optimization ensure your systems operate at
+                            peak efficiency and deliver maximum value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Work Process End -->
+
+
+    <!-- Pricing Plan Start -->
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Pricing Plans</h5>
+                <h1 class="mb-0">We are Offering Competitive Prices for Our Clients</h1>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="bg-light rounded">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Basic Plan</h4>
+                            <small class="text-uppercase">For Small Size Business</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>49.00<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Standard Plan</h4>
+                            <small class="text-uppercase">For Medium Size Business</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>99.00<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="bg-light rounded">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Advanced Plan</h4>
+                            <small class="text-uppercase">For Large Size Business</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>149.00<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Pricing Plan End -->
+
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="section-title-1 position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">General FAQs</h5>
+                        <h1 class="mb-0">Any Question? Check the FAQs or Contact Us</h1>
+                    </div>
+                    <p class="mb-4">We understand that choosing the right technology partner comes with many questions.
+                        Our FAQs are designed to give you clear insights into our process, services, and support. If you
+                        need more information or have a specific requirement, feel free to contact our team—we’re always
+                        happy to help.
+                        <a href="faq.html" class="btn btn-primary py-3 px-5 me-3">Explore More FAQs</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion accordion-custom" id="accordionExample">
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-semi-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How to build a website?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We provide comprehensive digital transformation services including SAP Solutions,
+                                    Cloud Migration (AWS, Azure, GCP), Cybersecurity Solutions, AI & ML Implementation,
+                                    DevOps & Automation, and end-to-end Digital Transformation consulting. Our expert
+                                    team helps organizations modernize their IT infrastructure and drive innovation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-semi-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    How long will it take to get a new website?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We provide comprehensive digital transformation services including SAP Solutions,
+                                    Cloud Migration (AWS, Azure, GCP), Cybersecurity Solutions, AI & ML Implementation,
+                                    DevOps & Automation, and end-to-end Digital Transformation consulting. Our expert
+                                    team helps organizations modernize their IT infrastructure and drive innovation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-semi-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Do you only create HTML websites?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We provide comprehensive digital transformation services including SAP Solutions,
+                                    Cloud Migration (AWS, Azure, GCP), Cybersecurity Solutions, AI & ML Implementation,
+                                    DevOps & Automation, and end-to-end Digital Transformation consulting. Our expert
+                                    team helps organizations modernize their IT infrastructure and drive innovation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed fw-semi-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                                    aria-controls="collapseFour">
+                                    Will my website be mobile-friendly?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We provide comprehensive digital transformation services including SAP Solutions,
+                                    Cloud Migration (AWS, Azure, GCP), Cybersecurity Solutions, AI & ML Implementation,
+                                    DevOps & Automation, and end-to-end Digital Transformation consulting. Our expert
+                                    team helps organizations modernize their IT infrastructure and drive innovation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed fw-semi-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Will you maintain my site for me?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We provide comprehensive digital transformation services including SAP Solutions,
+                                    Cloud Migration (AWS, Azure, GCP), Cybersecurity Solutions, AI & ML Implementation,
+                                    DevOps & Automation, and end-to-end Digital Transformation consulting. Our expert
+                                    team helps organizations modernize their IT infrastructure and drive innovation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title-1 text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Client Success Stories</h5>
+                <h1 class="mb-0">What our clients say about our transformative solutions</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Rakesh Vikram</h4>
+                            <small class="text-uppercase">CTO, Fortune 500 Healthcare</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        "Inonetecx transformed our entire infrastructure. Their cloud migration strategy reduced our
+                        operational costs by 40% while improving performance dramatically. The team's expertise in AI
+                        implementation has revolutionized our customer service operations."
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Robert Thomas</h4>
+                            <small class="text-uppercase">CISO, Global Finance Corp</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        "The cybersecurity audit and implementation by Inonetecx exceeded our expectations. They
+                        identified critical vulnerabilities and implemented a comprehensive security framework that has
+                        protected us from multiple threats. Outstanding expertise and professionalism."
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;">
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Vinay Malhotra</h4>
+                            <small class="text-uppercase">VP Marketing, RetailTech Solutions</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        "Their AI-powered analytics solution has transformed how we understand our customers. The
+                        predictive models have increased our sales conversion by 35% and customer satisfaction scores
+                        have reached all-time highs. Incredible ROI!"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Quote Start -->
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title-1 position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">Request A Quote</h5>
+                        <h1 class="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
+                        </div>
+                    </div>
+                    <p class="mb-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-xl-12">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                        <option selected>Select A Service</option>
+                                        <option value="1">Service 1</option>
+                                        <option value="2">Service 2</option>
+                                        <option value="3">Service 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Quote End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Meet Our Experts</h5>
+                <h1 class="mb-0">Industry veterans leading digital transformation initiatives</h1>
+            </div>
+            <div class="row g-5" id="team-container">
+                <!-- Team Member 1 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="ankita">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/AnkitaRawat.png" alt="Ankita Rawat">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Ankita Rawat</h4>
+                            <p class="text-uppercase m-0 small">Vice President–Sales & Operations</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Ankita Rawat is a seasoned Vice President – Sales &
+                                    Operations with over 15 years of experience driving revenue growth, operational
+                                    efficiency, and market expansion across global markets. She recently completed her
+                                    Master's degree from Western University, enhancing her strategic and analytical
+                                    capabilities. Ankita has led cross-functional teams, managed multi-million-dollar
+                                    P&Ls, and successfully executed large-scale transformation initiatives. Her
+                                    leadership blends data-driven decision-making with a customer-first mindset,
+                                    resulting in sustained business growth. Passionate about innovation and team
+                                    development, she excels at aligning sales and operations to deliver measurable
+                                    impact in fast-paced, high-growth environments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.2s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="saurabh">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/saurabh.jpg" alt="Saurabh Ranjan">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Saurabh Ranjan</h4>
+                            <p class="text-uppercase m-0 small">Director-Global Sales</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Saurabh is the Director – Global Sales at Inonetex,
+                                    bringing over 30 years of international sales leadership across technology and
+                                    enterprise sectors. At Inonetex, he drives global revenue strategies, oversees
+                                    cross-regional sales teams, and leads high-value enterprise negotiations across
+                                    APAC, EMEA, and North America. Renowned for his ability to scale markets and build
+                                    long-term client relationships, Saurabh combines strategic thinking with operational
+                                    precision. His leadership is rooted in data-driven decision-making, cultural
+                                    agility, and deep market insight—making him a key force behind Inonetex's sustained
+                                    global growth and competitive positioning in a rapidly evolving business landscape.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="insiya">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/insiya.png" alt="Insiya">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Insiya</h4>
+                            <p class="text-uppercase m-0 small">Director-Sales-North America & LATAM</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Insiya is the Director – Sales for North America &
+                                    LATAM at Inonetecx, with over 10 years of experience leading sales strategies and
+                                    business development across diverse markets. She specializes in driving revenue
+                                    growth, expanding market share, and building high-performing sales teams in the
+                                    North American and Latin American regions. Insiya is skilled in consultative
+                                    selling, channel partnerships, and customer relationship management, consistently
+                                    exceeding sales targets. At Inonetecx, she plays a vital role in developing and
+                                    executing go-to-market strategies tailored to regional market dynamics, fostering
+                                    long-term client partnerships and sustainable growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.4s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="nistha">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/nishta.png" alt="Nistha Batra">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Nistha Batra</h4>
+                            <p class="text-uppercase m-0 small">Director - HR Operations & Talent Acquisition</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Nistha Batra is the Director – HR Operations & Talent
+                                    Acquisition at Inonetecx, bringing over 13 years of experience in designing and
+                                    executing talent strategies that drive organizational growth and operational
+                                    excellence. She specializes in workforce planning, recruitment, employee engagement,
+                                    and HR process optimization. Nistha is known for building strong, diverse teams and
+                                    implementing scalable HR operations that align with business objectives. Her
+                                    leadership combines strategic vision with hands-on management, enabling Inonetecx to
+                                    attract, retain, and develop top talent in a competitive market.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.5s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="rahul">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/rahul.png" alt="Rahul Saxena">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Rahul Saxena</h4>
+                            <p class="text-uppercase m-0 small">Principal Architect-Cybersecurity</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Rahul Saxena is a seasoned Principal Architect –
+                                    Cybersecurity at Inonetecx, with over 15 years of experience in designing and
+                                    implementing robust security architectures for complex enterprise environments. He
+                                    specializes in threat modeling, risk assessment, and developing scalable
+                                    cybersecurity frameworks that protect critical assets and ensure compliance. Rahul's
+                                    expertise spans cloud security, network defense, and incident response, making him a
+                                    key driver of secure digital transformation initiatives at Inonetecx. Known for his
+                                    strategic approach and deep technical knowledge, he collaborates closely with
+                                    cross-functional teams to deliver innovative and resilient cybersecurity solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="isha">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/isha.png" alt="Isha Arneja">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Isha Arneja</h4>
+                            <p class="text-uppercase m-0 small">Principal Architect-SAP</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Isha Arneja is a highly experienced Principal Architect
+                                    – SAP at Inonetecx, with over 15 years of expertise in designing, implementing, and
+                                    optimizing SAP solutions across diverse industries. She specializes in SAP
+                                    architecture, system integration, and process automation, delivering scalable and
+                                    efficient enterprise resource planning (ERP) systems. Isha's deep technical
+                                    knowledge and strategic vision enable her to lead complex projects that enhance
+                                    business processes and drive digital transformation. At Inonetecx, she collaborates
+                                    with cross-functional teams to ensure SAP landscapes align with organizational
+                                    goals, supporting growth and operational excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 7 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.7s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="varsha">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/varsha.png" alt="Varsha Pradhan">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Varsha Pradhan</h4>
+                            <p class="text-uppercase m-0 small">Director-Sales - APAC & EMEA</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Varsha Pradhan is the Director – Sales for APAC & EMEA
+                                    at Inonetecx, with over 10 years of experience leading sales strategy and business
+                                    development across diverse international markets. She specializes in driving revenue
+                                    growth, expanding market presence, and building high-performing sales teams across
+                                    the APAC and EMEA regions. Varsha's expertise lies in consultative selling, channel
+                                    management, and client relationship building, enabling her to consistently exceed
+                                    sales targets. At Inonetecx, she plays a key role in shaping go-to-market strategies
+                                    that align with regional dynamics and foster long-term customer partnerships.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 8 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.8s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="reshu">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/reshu.png" alt="Reshu Saini">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Reshu Saini</h4>
+                            <p class="text-uppercase m-0 small">Principal Architect-Cloud</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Reshu Saini is a seasoned Principal Architect – Cloud
+                                    at Inonetecx, with over 20 years of experience designing and implementing scalable,
+                                    secure cloud architectures across AWS, Azure, and Google Cloud platforms. She
+                                    specializes in cloud strategy, migration, and infrastructure optimization, helping
+                                    enterprises leverage multi-cloud technologies to drive innovation and operational
+                                    efficiency. Reshu's expertise spans automation, security best practices, and cost
+                                    management, enabling seamless digital transformation. At Inonetecx, she leads
+                                    complex cloud projects and collaborates with cross-functional teams to deliver
+                                    resilient, cost-effective solutions aligned with business objectives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 9 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="daniel">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/daniel.jpg" alt="Daniel J.">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Daniel J.</h4>
+                            <p class="text-uppercase m-0 small">Director-Business Development</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Daniel is the Director – Business Development at
+                                    Inonetecx, with over 25 years of experience in driving strategic growth, forging
+                                    high-value partnerships, and expanding business across global markets. At Inonetecx,
+                                    he leads key initiatives to identify new market opportunities, strengthen client
+                                    relationships, and deliver sustainable revenue growth. Known for his strategic
+                                    mindset and relationship-driven approach, Daniel combines deep industry expertise
+                                    with hands-on execution to consistently exceed business goals. His ability to align
+                                    market needs with innovative solutions makes him a critical contributor to
+                                    Inonetecx's continued success and global expansion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 10 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="kashish">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/kashish.png" alt="Kashish Yagsaini">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Kashish Yagsaini</h4>
+                            <p class="text-uppercase m-0 small">Consultant Digital Marketing</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Kashish Yagsaini is a skilled Consultant – Digital
+                                    Marketing at Inonetecx, specializing in creating and executing data-driven digital
+                                    marketing strategies. She focuses on SEO, SEM, social media campaigns, and content
+                                    marketing to enhance brand visibility and drive customer engagement. Kashish
+                                    leverages analytics and market insights to optimize campaigns and deliver measurable
+                                    ROI. At Inonetecx, she collaborates with cross-functional teams to support business
+                                    growth and digital transformation initiatives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 11 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.2s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="tanisha">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/tanisha.png" alt="Tanisha Gupta">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Tanisha Gupta</h4>
+                            <p class="text-uppercase m-0 small">Software Engineer</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Tanisha Gupta is a dedicated Software Engineer at
+                                    Inonetecx with expertise in SAP Security and SAP Basis. She specializes in managing
+                                    and optimizing SAP environments, ensuring system integrity, user access control, and
+                                    efficient basis administration. Tanisha is skilled in troubleshooting, performance
+                                    tuning, and implementing security protocols to safeguard critical enterprise
+                                    systems. At Inonetecx, she supports seamless SAP operations and collaborates with
+                                    cross-functional teams to enhance system reliability and security.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 12 -->
+                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-member-card bg-light rounded position-relative" data-member="ayush">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team/ayush.png" alt="Ayush Singh">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary mb-1">Ayush Singh</h4>
+                            <p class="text-uppercase m-0 small">Software Engineer</p>
+                        </div>
+                        <div class="team-details">
+                            <div class="p-4 bg-white border-top">
+                                <p class="mb-0 small text-muted">Ayush Singh is a proficient Software Engineer at
+                                    Inonetecx, specializing in SAP Business Technology Platform (BTP) and SAP Cloud
+                                    Platform Integration (CPI). He focuses on developing, integrating, and optimizing
+                                    cloud-based SAP solutions that drive business agility and seamless process
+                                    automation. Ayush's expertise includes designing scalable integrations,
+                                    troubleshooting complex workflows, and ensuring smooth deployment of SAP cloud
+                                    services. At Inonetecx, he collaborates with cross-functional teams to deliver
+                                    innovative solutions that enhance operational efficiency and digital transformation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+
+
+    <!-- Vendor Start -->
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/vendor-3.jpg" alt="">
+                    <img src="img/vendor-4.jpg" alt="">
+                    <img src="img/vendor-5.jpg" alt="">
+                    <img src="img/vendor-6.jpg" alt="">
+                    <img src="img/vendor-7.jpg" alt="">
+                    <img src="img/vendor-8.jpg" alt="">
+                    <img src="img/vendor-9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Service Detail Modals Start -->
+    <!-- SAP Solutions Modal -->
+    <div class="modal fade" id="sapSolutionsModal" tabindex="-1" aria-labelledby="sapSolutionsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sapSolutionsLabel">SAP Solutions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>At Inonetecx, we provide full-spectrum SAP Solution Services to help organizations streamline
+                        processes, enhance agility, and drive innovation. From traditional ERP implementations to
+                        cloud-first strategies like RISE with SAP, we deliver scalable, secure, and future-ready SAP
+                        solutions tailored to your industry and business goals.</p>
+                    <h6 class="fw-bold mt-4 mb-3">Our SAP Services Include:</h6>
+                    <ul>
+                        <li><strong>SAP Rise Migration & Implementation</strong> - Seamless transition to cloud-based
+                            SAP environments</li>
+                        <li><strong>SAP Cloud Services</strong> - Scalable and flexible cloud solutions</li>
+                        <li><strong>SAP Integration Services</strong> - Connect SAP with your existing systems</li>
+                        <li><strong>SAP Upgrade & Migration</strong> - Smooth upgrades to latest SAP versions</li>
+                        <li><strong>SAP Customization & Development</strong> - Tailored solutions for your business
+                            needs</li>
+                        <li><strong>SAP Support & Maintenance</strong> - 24/7 support and system optimization</li>
+                        <li><strong>SAP Analytics & Reporting</strong> - Data-driven insights and business intelligence
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cloud Solutions Modal -->
+    <div class="modal fade" id="cloudSolutionsModal" tabindex="-1" aria-labelledby="cloudSolutionsLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cloudSolutionsLabel">Cloud Solutions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>At Inonetecx, we deliver comprehensive Cloud Solutions Services to help businesses modernize
+                        their IT infrastructure, reduce costs, and accelerate innovation. Whether you're migrating
+                        existing systems, building cloud-native applications, or managing a multi-cloud environment, we
+                        provide end-to-end support using leading platforms like Microsoft Azure, Amazon Web Services
+                        (AWS), and Google Cloud Platform (GCP).</p>
+                    <h6 class="fw-bold mt-4 mb-3">Our Cloud Services Include:</h6>
+                    <ul>
+                        <li><strong>Cloud Strategy & Consulting</strong> - Expert guidance for your cloud journey</li>
+                        <li><strong>Cloud Migration</strong> - Seamless migration to Azure, AWS, or GCP</li>
+                        <li><strong>Cloud Security & Compliance</strong> - Robust security and regulatory compliance
+                        </li>
+                        <li><strong>Platform as a Service (PaaS) & Software as a Service (SaaS)</strong> - Scalable
+                            cloud platforms</li>
+                        <li><strong>Cloud Analytics & Data Management</strong> - Advanced data solutions in the cloud
+                        </li>
+                        <li><strong>Managed Cloud Services</strong> - Ongoing management and optimization</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cybersecurity Solutions Modal -->
+    <div class="modal fade" id="cybersecurityModal" tabindex="-1" aria-labelledby="cybersecurityLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cybersecurityLabel">Cybersecurity Solutions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>At Inonetecx, we provide comprehensive cybersecurity solutions to protect your digital assets,
+                        data, and IT infrastructure against ever-evolving threats. From risk assessment and threat
+                        prevention to incident response and compliance, our end-to-end services ensure your business
+                        remains secure, resilient, and compliant.</p>
+                    <h6 class="fw-bold mt-4 mb-3">Our Cybersecurity Services Include:</h6>
+                    <ul>
+                        <li><strong>Security Assessment & Consulting</strong> - Identify vulnerabilities and risks</li>
+                        <li><strong>Network & Infrastructure Security</strong> - Protect your network perimeter</li>
+                        <li><strong>Identity & Access Management (IAM)</strong> - Control user access and permissions
+                        </li>
+                        <li><strong>Cloud Security</strong> - Secure your cloud environments</li>
+                        <li><strong>Endpoint Security</strong> - Protect devices and endpoints</li>
+                        <li><strong>Threat Detection & Incident Response</strong> - Real-time monitoring and rapid
+                            response</li>
+                        <li><strong>Governance, Risk & Compliance (GRC)</strong> - Meet regulatory requirements</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI & ML Solutions Modal -->
+    <div class="modal fade" id="aiMlModal" tabindex="-1" aria-labelledby="aiMlLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aiMlLabel">AI & ML Solutions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>At Inonetecx, we combine the power of Artificial Intelligence (AI), Machine Learning (ML), and
+                        Data Science to transform raw data into actionable insights. Our end-to-end services help
+                        organizations automate processes, optimize operations, and unlock new growth opportunities
+                        through intelligent analytics and predictive modeling.</p>
+                    <h6 class="fw-bold mt-4 mb-3">Our AI & ML Services Include:</h6>
+                    <ul>
+                        <li><strong>AI & ML Strategy & Consulting</strong> - Strategic roadmap for AI adoption</li>
+                        <li><strong>Machine Learning Model Development</strong> - Custom ML models for your business
+                        </li>
+                        <li><strong>Data Science & Advanced Analytics</strong> - Deep insights from your data</li>
+                        <li><strong>Natural Language Processing (NLP)</strong> - Text analysis and language
+                            understanding</li>
+                        <li><strong>Computer Vision</strong> - Image and video analysis solutions</li>
+                        <li><strong>AI Deployment & MLOps</strong> - Production-ready AI systems</li>
+                        <li><strong>AI Security</strong> - Secure and ethical AI implementations</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DevOps & Automation Solutions Modal -->
+    <div class="modal fade" id="devopsModal" tabindex="-1" aria-labelledby="devopsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="devopsLabel">DevOps & Automation Solutions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>At Inonetecx, we help organizations transform their software development and IT operations by
+                        implementing modern DevOps practices and intelligent automation solutions. Our services enable
+                        faster releases, higher quality, and scalable infrastructure management across cloud and on-prem
+                        environments.</p>
+                    <h6 class="fw-bold mt-4 mb-3">Our DevOps Services Include:</h6>
+                    <ul>
+                        <li><strong>DevOps Strategy & Consulting</strong> - DevOps transformation roadmap</li>
+                        <li><strong>Cloud DevOps & Containerization</strong> - Docker, Kubernetes, and orchestration
+                        </li>
+                        <li><strong>Infrastructure as Code (IaC)</strong> - Automated infrastructure provisioning</li>
+                        <li><strong>Automation & Orchestration</strong> - Streamlined workflows and processes</li>
+                        <li><strong>Monitoring & Logging</strong> - Real-time system monitoring</li>
+                        <li><strong>DevSecOps Integration</strong> - Security integrated into DevOps</li>
+                        <li><strong>Continuous Integration & Continuous Delivery (CI/CD)</strong> - Automated build and
+                            deployment pipelines</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Digital Transformation Solutions Modal -->
+    <div class="modal fade" id="digitalTransformationModal" tabindex="-1" aria-labelledby="digitalTransformationLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="digitalTransformationLabel">Digital Transformation Solutions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>At Inonetecx, we partner with organizations to drive end-to-end digital
+                        transformation—modernizing processes, leveraging cutting-edge technologies, and reimagining
+                        customer experiences. Our solutions help businesses become more agile, efficient, and
+                        competitive in today's fast-paced market.</p>
+                    <h6 class="fw-bold mt-4 mb-3">Our Digital Transformation Services Include:</h6>
+                    <ul>
+                        <li><strong>Digital Strategy & Consulting</strong> - Comprehensive digital roadmap</li>
+                        <li><strong>Process Automation & Optimization</strong> - Streamline operations with automation
+                        </li>
+                        <li><strong>Cloud Modernization</strong> - Move to cloud-first architecture</li>
+                        <li><strong>Customer Experience (CX) Transformation</strong> - Enhanced customer journeys</li>
+                        <li><strong>Data-Driven Insights & Analytics</strong> - Business intelligence and analytics</li>
+                        <li><strong>Digital Security & Compliance</strong> - Secure digital operations</li>
+                        <li><strong>Change Management & Training</strong> - Support teams through transformation</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Detail Modals End -->
+
+    <!-- Vendor Start -->
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Include Navbar & Footer -->
+    <script src="js/include.js"></script>
+
+    <script>
+        (function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                new bootstrap.Tooltip(tooltipTriggerEl, {
+                    customClass: 'inon-tooltip',
+                    trigger: 'hover'
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
