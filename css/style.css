@@ -220,6 +220,11 @@ h6,
     color: var(--primary) !important;
 }
 
+.navbar-light .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
 .navbar-light .navbar-brand h1 {
     color: #4f6df5;
     /* Fallback for browsers that don't support gradient text */
@@ -231,6 +236,7 @@ h6,
     /* letter-spacing: -0.5px; */
     position: relative;
     display: inline-block;
+    margin: 0;
 }
 
 .navbar-light .navbar-brand h1 i {
@@ -241,12 +247,16 @@ h6,
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 60px;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 10px;
     transition: .5s;
 }
 
 .sticky-top.navbar-light .navbar-brand img {
-    max-height: 40px;
+    height: 45px;
+    width: auto;
 }
 
 @media (max-width: 991.98px) {
@@ -275,7 +285,8 @@ h6,
     }
 
     .navbar-light .navbar-brand img {
-        max-height: 45px;
+        height: 45px;
+        width: auto;
     }
 }
 
@@ -1111,6 +1122,12 @@ h6,
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+/* Fix specific head cutoff for members */
+.team-member-card[data-member="saurabh"] .team-img img,
+.team-member-card[data-member="insiya"] .team-img img {
+    object-position: top;
 }
 
 .team-details {
