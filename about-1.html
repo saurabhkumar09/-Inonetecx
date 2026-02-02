@@ -39,6 +39,47 @@
             transition: color 0.2s ease;
         }
 
+        .feature-item-card {
+            transition: all 0.3s ease;
+            border: 1px solid #eee !important;
+            background: #fff;
+        }
+
+        .feature-item-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary) !important;
+        }
+
+        .feature-icon-box {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(9, 30, 62, 0.05);
+            border-radius: 12px;
+            color: var(--primary);
+            transition: all 0.3s ease;
+            font-size: 24px;
+        }
+
+        .feature-item-card:hover .feature-icon-box {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .feature-item-card h4 {
+            font-weight: 700;
+            color: #091E3E;
+            margin-bottom: 12px;
+        }
+
+        .feature-item-card p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
         .feature-tooltip:hover {
             color: var(--bs-primary) !important;
         }
@@ -121,7 +162,7 @@
     </style>
 </head>
 
-<body>
+<body class="inner-page">
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -134,7 +175,7 @@
 
     <div class="container-fluid position-relative p-0">
 
-        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="container-fluid py-5 bg-primary bg-header" style="margin-bottom: 60px;">
             <div class="row py-5">
                 <div class="col-12 pt-lg-5 mt-lg-5 text-center">
                     <h1 class="display-4 text-white animated zoomIn mb-3">About Us</h1>
@@ -170,92 +211,28 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
+    <div class="container-fluid py-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-4">
             <div class="row g-5">
                 <div class="col-lg-7">
                     <div class="section-title-1 position-relative pb-3 mb-5">
                         <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
-                        <h1 class="mb-0">Redefining Service Integration Since 2019</h1>
+                        <h1 class="display-4 fw-bold mb-0">Redefining Service Integration Since 2019</h1>
                     </div>
-                    <p class="mb-4">Since 2019, we have been at the forefront of digital transformation, helping
+                    <p class="mb-4 text-muted" style="font-size: 1.25rem; line-height: 1.6;">Since 2019, we have been at
+                        the forefront of digital transformation, helping
                         businesses navigate the complex landscape of modern technology. Our team of experienced
                         professionals specializes in SAP solutions, cloud migration, cybersecurity, AI & ML, DevOps, and
                         comprehensive digital transformation services. We combine deep technical expertise with
                         strategic business insights to deliver solutions that drive growth, efficiency, and innovation.
                     </p>
-                    <div class="row g-0 mb-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3">
-                                <i class="fa fa-check text-primary me-3"></i>
-                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-html="true"
-                                    title="<strong>Industry Recognition</strong><br>At Inonetecx, our commitment to innovation and excellence has earned us recognition from leading voices in the technology industry. Our award-winning solutions stand as proof of our ability to combine creativity, strategy, and technical precision to solve real-world business challenges. From AI-driven enterprise solutions to next-generation cloud integrations, our work has been acknowledged by industry experts, partners, and clients alike for driving measurable impact and delivering unmatched performance. These accolades reflect not just our technical capabilities, but also our dedication to pushing boundaries and setting new benchmarks in IT consulting and digital transformation.">
-                                    Industry Recognition
-                                </span>
-                            </h5>
-                            <h5 class="mb-3">
-                                <i class="fa fa-check text-primary me-3"></i>
-                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-html="true"
-                                    title="<strong>Expert Team</strong><br>100+ certified professionals with diverse technical backgrounds. At Inonetecx, our people are the engine behind every breakthrough. With a growing team of 100+ certified experts, we bring together a rare blend of deep technical skill, domain experience, and product-minded thinking—so clients get solutions that aren't just built right, but built to deliver measurable business value.">
-                                    Expert Team
-                                </span>
-                            </h5>
-                            <h5 class="mb-3">
-                                <i class="fa fa-check text-primary me-3"></i>
-                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-html="true"
-                                    title="<strong>Global Reach</strong><br>Serving clients across North America, Europe, and Asia-Pacific. At Inonetecx, we operate without borders — partnering with enterprises and innovators around the world to deliver technology solutions that transcend geography and industry. Our global footprint spans North America, Europe, and the Asia-Pacific region, enabling us to bring local insights, global expertise, and around-the-clock support to every engagement.">
-                                    Global Reach
-                                </span>
-                            </h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3">
-                                <i class="fa fa-check text-primary me-3"></i>
-                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-html="true"
-                                    title="<strong>Award Winning</strong><br>Our solutions have been recognized by industry bodies and technology partners for excellence in delivery, innovation, and customer outcomes. These awards validate our focus on quality engineering, robust architectures, and user‑centric design — and they motivate us to continuously raise the bar on every project we deliver.">
-                                    Award Winning
-                                </span>
-                            </h5>
-                            <h5 class="mb-3">
-                                <i class="fa fa-check text-primary me-3"></i>
-                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-html="true"
-                                    title="<strong>Professional Staff</strong><br>Our teams combine strong technical foundations with clear communication, structured delivery, and a consultative mindset. Every engagement is managed with transparent processes, defined milestones, and proactive risk management so that stakeholders always know where the project stands and what comes next.">
-                                    Professional Staff
-                                </span>
-                            </h5>
-                            <h5 class="mb-3">
-                                <i class="fa fa-check text-primary me-3"></i>
-                                <span class="feature-tooltip" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    data-bs-html="true"
-                                    title="<strong>24/7 Support</strong><br>Business doesn't stop, and neither do we. Our support model is designed to give you access to the right people at the right time, across time zones. From proactive monitoring to rapid incident response and ongoing optimization, we help keep your critical systems stable, secure, and performing at their best around the clock.">
-                                    24/7 Support
-                                </span>
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+1 647-493-5614
-                            </h4>
-                        </div>
-                    </div>
                     <!-- <a href="" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A
                         Quote</a> -->
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                            src="img/about1.jpg" style="object-fit: cover;">
+                            src="img/abt2.png" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -263,122 +240,234 @@
     </div>
     <!-- About End -->
 
-    <!-- Feature Detail Modals Start -->
-    <div class="modal fade" id="industryRecognitionModal" tabindex="-1" aria-labelledby="industryRecognitionLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="industryRecognitionLabel">Industry Recognition</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Features Grid Start -->
+    <div class="container-fluid py-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="feature-item-card h-100 p-5 rounded">
+                        <div class="feature-icon-box mb-4">
+                            <i class="fa fa-award"></i>
+                        </div>
+                        <h4>Industry Recognition</h4>
+                        <p class="mb-0 text-muted">At Inonetecx, our commitment to innovation and excellence has earned
+                            us recognition from leading tech voices. Our award-winning solutions stand as proof of our
+                            ability to combine creativity, strategy, and precision to solve real-world business
+                            challenges, driving measurable impact and unmatched performance across industries.</p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <p>At Inonetecx, our commitment to innovation and excellence has earned us recognition from leading
-                        voices in the technology industry. Our award-winning solutions stand as proof of our ability to
-                        combine creativity, strategy, and technical precision to solve real-world business challenges.
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="feature-item-card h-100 p-5 rounded">
+                        <div class="feature-icon-box mb-4">
+                            <i class="fa fa-trophy"></i>
+                        </div>
+                        <h4>Award Winning</h4>
+                        <p class="mb-0 text-muted">Our solutions have been recognized by industry bodies and technology
+                            partners for excellence in delivery, innovation, and customer outcomes. These awards
+                            validate our focus on quality engineering, robust architectures, and user‑centric design —
+                            and they motivate us to continuously raise the bar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="feature-item-card h-100 p-5 rounded">
+                        <div class="feature-icon-box mb-4">
+                            <i class="fa fa-users-cog"></i>
+                        </div>
+                        <h4>Expert Team</h4>
+                        <p class="mb-0 text-muted">100+ certified professionals with diverse technical backgrounds. At
+                            Inonetecx, our people are the engine behind every breakthrough. We bring together a rare
+                            blend of deep technical skill, domain experience, and product-minded thinking—so clients get
+                            solutions that deliver measurable value.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="feature-item-card h-100 p-5 rounded">
+                        <div class="feature-icon-box mb-4">
+                            <i class="fa fa-user-tie"></i>
+                        </div>
+                        <h4>Professional Staff</h4>
+                        <p class="mb-0 text-muted">Our teams combine strong technical foundations with clear
+                            communication, structured delivery, and a consultative mindset. Every engagement is managed
+                            with transparent processes and proactive risk management so that stakeholders always know
+                            where the project stands and what comes next.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.0s">
+                    <div class="feature-item-card h-100 p-5 rounded">
+                        <div class="feature-icon-box mb-4">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <h4>Global Reach</h4>
+                        <p class="mb-0 text-muted">Serving clients across North America, Europe, and Asia-Pacific. At
+                            Inonetecx, we operate without borders — partnering with innovators around the world to
+                            deliver technology solutions that transcend geography. Our global footprint enables us to
+                            bring local insights and 24/7 support to every engagement.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.2s">
+                    <div class="feature-item-card h-100 p-5 rounded">
+                        <div class="feature-icon-box mb-4">
+                            <i class="fa fa-headset"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p class="mb-0 text-muted">Business doesn't stop, and neither do we. Our support model is
+                            designed to give you access to the right people at the right time. From proactive monitoring
+                            to rapid incident response and ongoing optimization, we help keep your critical systems
+                            stable, secure, and performing at their best around the clock.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features Grid End -->
+
+    <!-- Photo Collage Start -->
+    <div class="container-fluid py-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-4">
+            <div class="photo-collage-grid">
+                <!-- Top Row - 2 images -->
+                <div class="collage-item collage-item-1">
+                    <img src="img/collage/c8.png" alt="Team collaboration" class="img-fluid rounded">
+                </div>
+                <div class="collage-item collage-item-2">
+                    <img src="img/collage/c9.png" alt="Team meeting" class="img-fluid rounded">
+                </div>
+
+                <!-- Middle Left Column - 2 images -->
+                <div class="collage-item collage-item-3">
+                    <img src="img/collage/c3.png" alt="Team discussion" class="img-fluid rounded">
+                </div>
+                <div class="collage-item collage-item-4">
+                    <img src="img/collage/c4.png" alt="Team workspace" class="img-fluid rounded">
+                </div>
+
+                <!-- Center - Purple Text Box -->
+                <div class="collage-item collage-item-center">
+                    <div class="collage-text-box">
+                        <p class="mb-4">At Inonetecx, we are committed to people. We think and work together to create
+                            innovative solutions that work for our clients.</p>
+                        <a href="contact.html" class="btn btn-light rounded-pill py-2 px-4">
+                            Contact Us <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Middle Right Column - 2 images -->
+                <div class="collage-item collage-item-5">
+                    <img src="img/collage/c1.png" alt="Team collaboration" class="img-fluid rounded">
+                </div>
+                <div class="collage-item collage-item-6">
+                    <img src="img/collage/c7.png" alt="Team workspace" class="img-fluid rounded">
+                </div>
+
+                <!-- Bottom - Large team photo -->
+                <div class="collage-item collage-item-7">
+                    <img src="img/collage/c5.png" alt="Full team" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Photo Collage End -->
+
+    <!-- Focus Section Start -->
+    <div class="container-fluid py-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-4">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title-1 position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">Core Commitment</h5>
+                        <h1 class="display-4 fw-bold mb-0">Our focus is excellence</h1>
+                    </div>
+                    <p class="mb-4 text-justify" style="font-size: 1.1rem; line-height: 1.8;">
+                        Expertise and experience, that’s what <strong>Inonetecx</strong> is all about. Our standards are
+                        high, our ability to deliver solutions is renowned and respected. We have a proven record of
+                        exceeding client expectations by providing top quality services. The Inonetecx team is a group
+                        of highly skilled and experienced SAP consultants, in all SAP areas, with a combined industry
+                        knowledge that covers several domains.
                     </p>
-                    <p>From AI-driven enterprise solutions to next-generation cloud integrations, our work has been
-                        acknowledged by industry experts, partners, and clients alike for driving measurable impact and
-                        delivering unmatched performance.</p>
-                    <p>These accolades reflect not just our technical capabilities, but also our dedication to pushing
-                        boundaries and setting new benchmarks in IT consulting and digital transformation.</p>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s">
+                    <div class="position-relative h-100">
+                        <img class="w-100 rounded shadow" src="img/abtcore.png" alt="Inonetecx Excellence"
+                            style="object-fit: cover;">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="expertTeamModal" tabindex="-1" aria-labelledby="expertTeamLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="expertTeamLabel">Expert Team</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container-fluid py-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-4">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s">
+                    <div class="position-relative">
+                        <img class="w-100 rounded shadow" src="img/ab1.png" alt="Inonetecx Excellence"
+                            style="object-fit: cover; height: 600px;">
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <p>With a growing team of 100+ certified professionals, Inonetecx brings together experts from
-                        diverse technical backgrounds, domains, and industries.</p>
-                    <p>Our people are the engine behind every breakthrough — combining deep technical skill, domain
-                        experience, and product-minded thinking so that solutions are not just built right, but built to
-                        deliver measurable business value.</p>
-                    <p>From architects and engineers to data scientists and consultants, our team collaborates closely
-                        with clients to turn complex challenges into scalable, future-ready solutions.</p>
+                <div class="col-lg-6">
+                    <div class="section-title-1 position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">Our commitment.</h5>
+                        <h1 class="display-4 fw-bold mb-0">Your momentum.</h1>
+                    </div>
+                    <p class="mb-4 text-justify" style="font-size: 1.1rem; line-height: 1.8;">
+                        Our focus is simple: delivering measurable success for our clients. We create solutions that
+                        streamline operations and empower teams, helping them outperform competitors and gain a clear
+                        advantage. Our experts are hands-on, experienced, and skilled at transforming business and IT
+                        needs into practical, innovative outcomes. We avoid jargon—we speak business. We don’t just
+                        think along; we think ahead, partnering with our clients to build what’s next.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Focus Section End -->
 
-    <div class="modal fade" id="globalReachModal" tabindex="-1" aria-labelledby="globalReachLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="globalReachLabel">Global Reach</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>At Inonetecx, we operate without borders — partnering with enterprises and innovators across
-                        North America, Europe, and the Asia-Pacific region.</p>
-                    <p>Our global presence allows us to combine local market insight with global delivery capabilities,
-                        ensuring every engagement benefits from best practices, shared learnings, and cross‑industry
-                        expertise.</p>
-                    <p>With distributed teams and 24/7 availability, we provide the agility, responsiveness, and
-                        continuity modern businesses need to scale with confidence.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="awardWinningModal" tabindex="-1" aria-labelledby="awardWinningLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="awardWinningLabel">Award Winning</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Contact Card Section Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="contact-card-wrapper position-relative">
+                <!-- Company Logo (X replacement) -->
+                <div class="company-logo-decoration">
+                    <img src="img/logo.png" alt="Inonetecx Logo" class="logo-icon">
                 </div>
-                <div class="modal-body">
-                    <p>Our solutions have been recognized by industry bodies and technology partners for excellence in
-                        delivery, innovation, and customer outcomes.</p>
-                    <p>These awards validate our focus on quality engineering, robust architectures, and user‑centric
-                        design — and they motivate us to continuously raise the bar on every project we deliver.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="professionalStaffModal" tabindex="-1" aria-labelledby="professionalStaffLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="professionalStaffLabel">Professional Staff</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Our teams combine strong technical foundations with clear communication, structured delivery, and
-                        a consultative mindset.</p>
-                    <p>Every engagement is managed with transparent processes, defined milestones, and proactive risk
-                        management so that stakeholders always know where the project stands and what comes next.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+                <!-- Contact Card -->
+                <div class="contact-card">
+                    <h2 class="contact-title mb-4">We're here to listen.<br>Get in touch with us.</h2>
 
-    <div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="supportLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="supportLabel">24/7 Support</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Business doesn’t stop, and neither do we. Our support model is designed to give you access to the
-                        right people at the right time, across time zones.</p>
-                    <p>From proactive monitoring to rapid incident response and ongoing optimization, we help keep your
-                        critical systems stable, secure, and performing at their best around the clock.</p>
+                    <div class="contact-details">
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-phone-alt me-2"></i>
+                            <a href="tel:+16474935614">+1 647-493-5614</a>
+                        </div>
+
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:contact@inonetecx.com">Send an email</a>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <i class="fab fa-linkedin me-2"></i>
+                            <a href="https://linkedin.com/company/inonetecx" target="_blank">LinkedIn</a>
+                        </div>
+
+                        <div class="contact-location">
+                            <p class="mb-2"><strong>Inonetecx is based in Canada.</strong></p>
+                            <a href="contact.html" class="contact-link">Looking for another contact?</a>
+                        </div>
+                    </div>
+
+                    <!-- Company Representative Image -->
+                    <div class="contact-image">
+                        <img src="img/team/AnkitaRawat.png" alt="Contact Representative" class="rounded-circle">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Feature Detail Modals End -->
+    <!-- Contact Card Section End -->
 
 
     <!-- Facts Start -->
@@ -542,374 +631,8 @@
     <!-- Story End -->
 
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Meet Our Experts</h5>
-                <h1 class="mb-0">Industry veterans leading digital transformation initiatives</h1>
-            </div>
-            <div class="row g-5" id="team-container">
-                <!-- Team Member 1 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.1s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="ankita">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/AnkitaRawat.png" alt="Ankita Rawat">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Ankita Rawat</h4>
-                            <p class="text-uppercase m-0 small">Vice President–Sales & Operations</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Ankita Rawat is a seasoned Vice President – Sales &
-                                    Operations with over 15 years of experience driving revenue growth, operational
-                                    efficiency, and market expansion across global markets. She recently completed her
-                                    Master's degree from Western University, enhancing her strategic and analytical
-                                    capabilities. Ankita has led cross-functional teams, managed multi-million-dollar
-                                    P&Ls, and successfully executed large-scale transformation initiatives. Her
-                                    leadership blends data-driven decision-making with a customer-first mindset,
-                                    resulting in sustained business growth. Passionate about innovation and team
-                                    development, she excels at aligning sales and operations to deliver measurable
-                                    impact in fast-paced, high-growth environments.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Team Member 2 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.2s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="saurabh">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/saurabh.jpg" alt="Saurabh Ranjan">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Saurabh Ranjan</h4>
-                            <p class="text-uppercase m-0 small">Director-Global Sales</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Saurabh is the Director – Global Sales at Inonetex,
-                                    bringing over 30 years of international sales leadership across technology and
-                                    enterprise sectors. At Inonetex, he drives global revenue strategies, oversees
-                                    cross-regional sales teams, and leads high-value enterprise negotiations across
-                                    APAC, EMEA, and North America. Renowned for his ability to scale markets and build
-                                    long-term client relationships, Saurabh combines strategic thinking with operational
-                                    precision. His leadership is rooted in data-driven decision-making, cultural
-                                    agility, and deep market insight—making him a key force behind Inonetex's sustained
-                                    global growth and competitive positioning in a rapidly evolving business landscape.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Team Member 3 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="insiya">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/insiya.png" alt="Insiya">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Insiya</h4>
-                            <p class="text-uppercase m-0 small">Director-Sales-North America & LATAM</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Insiya is the Director – Sales for North America &
-                                    LATAM at Inonetecx, with over 10 years of experience leading sales strategies and
-                                    business development across diverse markets. She specializes in driving revenue
-                                    growth, expanding market share, and building high-performing sales teams in the
-                                    North American and Latin American regions. Insiya is skilled in consultative
-                                    selling, channel partnerships, and customer relationship management, consistently
-                                    exceeding sales targets. At Inonetecx, she plays a vital role in developing and
-                                    executing go-to-market strategies tailored to regional market dynamics, fostering
-                                    long-term client partnerships and sustainable growth.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 4 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.4s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="nistha">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/nishta.png" alt="Nistha Batra">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Nistha Batra</h4>
-                            <p class="text-uppercase m-0 small">Director - HR Operations & Talent Acquisition</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Nistha Batra is the Director – HR Operations & Talent
-                                    Acquisition at Inonetecx, bringing over 13 years of experience in designing and
-                                    executing talent strategies that drive organizational growth and operational
-                                    excellence. She specializes in workforce planning, recruitment, employee engagement,
-                                    and HR process optimization. Nistha is known for building strong, diverse teams and
-                                    implementing scalable HR operations that align with business objectives. Her
-                                    leadership combines strategic vision with hands-on management, enabling Inonetecx to
-                                    attract, retain, and develop top talent in a competitive market.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 5 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.5s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="rahul">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/rahul.png" alt="Rahul Saxena">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Rahul Saxena</h4>
-                            <p class="text-uppercase m-0 small">Principal Architect-Cybersecurity</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Rahul Saxena is a seasoned Principal Architect –
-                                    Cybersecurity at Inonetecx, with over 15 years of experience in designing and
-                                    implementing robust security architectures for complex enterprise environments. He
-                                    specializes in threat modeling, risk assessment, and developing scalable
-                                    cybersecurity frameworks that protect critical assets and ensure compliance. Rahul's
-                                    expertise spans cloud security, network defense, and incident response, making him a
-                                    key driver of secure digital transformation initiatives at Inonetecx. Known for his
-                                    strategic approach and deep technical knowledge, he collaborates closely with
-                                    cross-functional teams to deliver innovative and resilient cybersecurity solutions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 6 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="isha">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/isha.png" alt="Isha Arneja">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Isha Arneja</h4>
-                            <p class="text-uppercase m-0 small">Principal Architect-SAP</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Isha Arneja is a highly experienced Principal Architect
-                                    – SAP at Inonetecx, with over 15 years of expertise in designing, implementing, and
-                                    optimizing SAP solutions across diverse industries. She specializes in SAP
-                                    architecture, system integration, and process automation, delivering scalable and
-                                    efficient enterprise resource planning (ERP) systems. Isha's deep technical
-                                    knowledge and strategic vision enable her to lead complex projects that enhance
-                                    business processes and drive digital transformation. At Inonetecx, she collaborates
-                                    with cross-functional teams to ensure SAP landscapes align with organizational
-                                    goals, supporting growth and operational excellence.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 7 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.7s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="varsha">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/varsha.png" alt="Varsha Pradhan">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Varsha Pradhan</h4>
-                            <p class="text-uppercase m-0 small">Director-Sales - APAC & EMEA</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Varsha Pradhan is the Director – Sales for APAC & EMEA
-                                    at Inonetecx, with over 10 years of experience leading sales strategy and business
-                                    development across diverse international markets. She specializes in driving revenue
-                                    growth, expanding market presence, and building high-performing sales teams across
-                                    the APAC and EMEA regions. Varsha's expertise lies in consultative selling, channel
-                                    management, and client relationship building, enabling her to consistently exceed
-                                    sales targets. At Inonetecx, she plays a key role in shaping go-to-market strategies
-                                    that align with regional dynamics and foster long-term customer partnerships.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 8 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.8s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="reshu">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/reshu.png" alt="Reshu Saini">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Reshu Saini</h4>
-                            <p class="text-uppercase m-0 small">Principal Architect-Cloud</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Reshu Saini is a seasoned Principal Architect – Cloud
-                                    at Inonetecx, with over 20 years of experience designing and implementing scalable,
-                                    secure cloud architectures across AWS, Azure, and Google Cloud platforms. She
-                                    specializes in cloud strategy, migration, and infrastructure optimization, helping
-                                    enterprises leverage multi-cloud technologies to drive innovation and operational
-                                    efficiency. Reshu's expertise spans automation, security best practices, and cost
-                                    management, enabling seamless digital transformation. At Inonetecx, she leads
-                                    complex cloud projects and collaborates with cross-functional teams to deliver
-                                    resilient, cost-effective solutions aligned with business objectives.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 9 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="daniel">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/daniel.jpg" alt="Daniel J.">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Daniel J.</h4>
-                            <p class="text-uppercase m-0 small">Director-Business Development</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Daniel is the Director – Business Development at
-                                    Inonetecx, with over 25 years of experience in driving strategic growth, forging
-                                    high-value partnerships, and expanding business across global markets. At Inonetecx,
-                                    he leads key initiatives to identify new market opportunities, strengthen client
-                                    relationships, and deliver sustainable revenue growth. Known for his strategic
-                                    mindset and relationship-driven approach, Daniel combines deep industry expertise
-                                    with hands-on execution to consistently exceed business goals. His ability to align
-                                    market needs with innovative solutions makes him a critical contributor to
-                                    Inonetecx's continued success and global expansion.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 10 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.1s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="kashish">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/kashish.png" alt="Kashish Yagsaini">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Kashish Yagsaini</h4>
-                            <p class="text-uppercase m-0 small">Consultant Digital Marketing</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Kashish Yagsaini is a skilled Consultant – Digital
-                                    Marketing at Inonetecx, specializing in creating and executing data-driven digital
-                                    marketing strategies. She focuses on SEO, SEM, social media campaigns, and content
-                                    marketing to enhance brand visibility and drive customer engagement. Kashish
-                                    leverages analytics and market insights to optimize campaigns and deliver measurable
-                                    ROI. At Inonetecx, she collaborates with cross-functional teams to support business
-                                    growth and digital transformation initiatives.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 11 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.2s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="tanisha">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/tanisha.png" alt="Tanisha Gupta">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Tanisha Gupta</h4>
-                            <p class="text-uppercase m-0 small">Software Engineer</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Tanisha Gupta is a dedicated Software Engineer at
-                                    Inonetecx with expertise in SAP Security and SAP Basis. She specializes in managing
-                                    and optimizing SAP environments, ensuring system integrity, user access control, and
-                                    efficient basis administration. Tanisha is skilled in troubleshooting, performance
-                                    tuning, and implementing security protocols to safeguard critical enterprise
-                                    systems. At Inonetecx, she supports seamless SAP operations and collaborates with
-                                    cross-functional teams to enhance system reliability and security.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 12 -->
-                <div class="col-lg-4 col-md-6 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-member-card bg-light rounded position-relative" data-member="ayush">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team/ayush.png" alt="Ayush Singh">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary mb-1">Ayush Singh</h4>
-                            <p class="text-uppercase m-0 small">Software Engineer</p>
-                        </div>
-                        <div class="team-details">
-                            <div class="p-4 bg-white border-top">
-                                <p class="mb-0 small text-muted">Ayush Singh is a proficient Software Engineer at
-                                    Inonetecx, specializing in SAP Business Technology Platform (BTP) and SAP Cloud
-                                    Platform Integration (CPI). He focuses on developing, integrating, and optimizing
-                                    cloud-based SAP solutions that drive business agility and seamless process
-                                    automation. Ayush's expertise includes designing scalable integrations,
-                                    troubleshooting complex workflows, and ensuring smooth deployment of SAP cloud
-                                    services. At Inonetecx, he collaborates with cross-functional teams to deliver
-                                    innovative solutions that enhance operational efficiency and digital transformation.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
 
     <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
