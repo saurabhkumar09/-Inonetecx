@@ -1639,3 +1639,31 @@ h6,
         height: 130px;
     }
 }
+
+/*** Map Location Tabs ***/
+.location-tabs {
+    border: 1px solid var(--primary);
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.location-tabs .btn {
+    border-radius: 0 !important;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.location-tabs .btn-outline-primary {
+    border: none !important;
+    background: transparent;
+    color: var(--primary);
+}
+
+.location-tabs .btn-primary.active {
+    box-shadow: none;
+    transform: none;
+}
+
+.location-map iframe {
+    border-radius: 0 0 8px 8px !important;
+}

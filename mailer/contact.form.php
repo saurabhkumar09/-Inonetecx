@@ -19,10 +19,10 @@ $debug = false;
 $useSMTP = false;  
 
 // Recipient name. Change this name to your
-$recipientName = "Joe User";
+$recipientName = "Inonetecx Canada Office";
 
 // Recipient email. Change this email to your
-$recipientEmail = "joe@example.com";
+$recipientEmail = "contact@inonetecx.com";
 
 // Collect form data
 $name    = trim($_POST['name'] ?? '');

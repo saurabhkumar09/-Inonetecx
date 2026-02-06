@@ -145,8 +145,13 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Visit our office</h5>
-                            <h4 class="text-primary mb-0">4-180 Northfield DR W Waterloo ON N2L 0C7, Canada
-                            </h4>
+                            <div id="address-canada" class="location-address">
+                                <h4 class="text-primary mb-0">4-180 Northfield DR W Waterloo ON N2L 0C7, Canada</h4>
+                            </div>
+                            <div id="address-india" class="location-address d-none">
+                                <h4 class="text-primary mb-0">D-58, Somdutt Chamber-1, 5 Bhikaji Cama Place, New Delhi,
+                                    India 110066</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,12 +160,13 @@
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
                     <div class="contact-form">
                         <div id="alertMessage"></div>
-                        <form id="contactForm" novalidate="novalidate">
+                        <form id="contactForm" action="https://formspree.io/f/xeeljynd" method="POST"
+                            novalidate="novalidate">
                             <div class="row">
                                 <div class="col-sm-6 control-group">
                                     <div class="form-floating">
                                         <input type="text" class="form-control border-0 bg-light py-2" id="name"
-                                            placeholder="Your Name" required="required"
+                                            name="name" placeholder="Your Name" required="required"
                                             data-validation-required-message="Please enter your name" />
                                         <label for="name">Your Name</label>
                                     </div>
@@ -169,7 +175,7 @@
                                 <div class="col-sm-6 control-group">
                                     <div class="form-floating">
                                         <input type="email" class="form-control border-0 bg-light py-2" id="email"
-                                            placeholder="Your Email" required="required"
+                                            name="email" placeholder="Your Email" required="required"
                                             data-validation-required-message="Please enter your email" />
                                         <label for="email">Your Email</label>
                                     </div>
@@ -178,7 +184,7 @@
                                 <div class="col-sm-6 control-group">
                                     <div class="form-floating">
                                         <input type="text" class="form-control border-0 bg-light py-2" id="mobile"
-                                            placeholder="Mobile" required="required"
+                                            name="mobile" placeholder="Mobile" required="required"
                                             data-validation-required-message="Please enter your mobile number"
                                             pattern="^(?![-. ])[\d().+\- ]{6,14}\d$"
                                             data-validation-pattern-message="Not a valid mobile number" />
@@ -189,7 +195,7 @@
                                 <div class="col-sm-6 control-group">
                                     <div class="form-floating">
                                         <input type="text" class="form-control border-0 bg-light py-2" id="subject"
-                                            placeholder="Subject" required="required"
+                                            name="subject" placeholder="Subject" required="required"
                                             data-validation-required-message="Please enter a subject" />
                                         <label for="subject">Subject</label>
                                     </div>
@@ -198,7 +204,7 @@
                                 <div class="col-12 control-group">
                                     <div class="form-floating">
                                         <textarea style="height: 165px" class="form-control border-0 bg-light"
-                                            id="message" placeholder="Message" required="required"
+                                            id="message" name="message" placeholder="Message" required="required"
                                             data-validation-required-message="Please enter your message"></textarea>
                                         <label for="message">Leave a message here</label>
                                     </div>
@@ -216,10 +222,24 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
-                    <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.43!2d-80.5473!3d43.4976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf4097f394589%3A0xc3f7a14ec848486e!2s4-180%20Northfield%20Dr%20W%2C%20Waterloo%2C%20ON%20N2L%200C7%2C%20Canada!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
-                        frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                    <div class="location-tabs mb-0 d-flex">
+                        <button class="btn btn-outline-primary flex-fill border-0 rounded-0 py-3"
+                            data-location="india">India</button>
+                        <button class="btn btn-primary active flex-fill border-0 rounded-0 py-3"
+                            data-location="canada">Canada</button>
+                    </div>
+                    <div id="map-canada" class="location-map h-100">
+                        <iframe class="position-relative rounded w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.43!2d-80.5473!3d43.4976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf4097f394589%3A0xc3f7a14ec848486e!2s4-180%20Northfield%20Dr%20W%2C%20Waterloo%2C%20ON%20N2L%200C7%2C%20Canada!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
+                            frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
+                    <div id="map-india" class="location-map h-100 d-none">
+                        <iframe class="position-relative rounded w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.6083074360935!2d77.18563337617255!3d28.566512387123985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1df64344498d%3A0x6b44ac7f28787034!2sBhikaji%20Cama%20Place%2C%20Rama%20Krishna%20Puram%2C%20New%20Delhi%2C%20Delhi%20110066!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -250,6 +270,34 @@
     <!-- Contact Form Javascript -->
     <script src="mailer/validation.form.js"></script>
     <script src="mailer/contact.form.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.location-tabs button').on('mouseenter', function () {
+                var location = $(this).data('location');
+
+                // Update buttons
+                $('.location-tabs button').removeClass('btn-primary active').addClass('btn-outline-primary');
+                $(this).removeClass('btn-outline-primary').addClass('btn-primary active');
+
+                // Update Maps
+                $('.location-map').addClass('d-none');
+                $('#map-' + location).removeClass('d-none');
+
+                // Update Addresses
+                $('.location-address').addClass('d-none');
+                $('#address-' + location).removeClass('d-none');
+            });
+
+            // Optional: reset to canada on mouseleave of the container
+            $('.col-lg-6').on('mouseleave', function (e) {
+                // If the mouse left the entire column
+                if (!$(e.relatedTarget).closest('.col-lg-6').length) {
+                    $('.location-tabs button[data-location="canada"]').trigger('mouseenter');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
